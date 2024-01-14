@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+
+  sac:
+    build: .
+    volumes:
+      - "./models:/app/models"
+    ports:
+      - "8080:80"
+    environment:
+      OBS_SHAPE: "[1280]"
+      ACTION_SHAPE: "[12]"
